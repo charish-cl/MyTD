@@ -55,6 +55,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TestGit.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rufAh6tUnOUsPcShWNmpLm7oYe" />
@@ -111,6 +112,7 @@
       <workItem from="1620047909041" duration="3206000" />
       <workItem from="1620051704669" duration="3349000" />
       <workItem from="1620138103126" duration="1000" />
+      <workItem from="1620140224906" duration="13000" />
     </task>
     <servers />
   </component>
