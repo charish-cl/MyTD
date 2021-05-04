@@ -1,0 +1,8 @@
+﻿{
+  "panelInfoList":
+  [
+    {"panelType":"panel1","path":"UIPanel/Panel1"},
+    {"panelType":"panel2","path":"UIPanel/Panel2"},
+    {"panelType":"panel3","path":"UIPanel/Panel3"}
+  ]
+}

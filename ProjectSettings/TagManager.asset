@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - "\u654C\u4EBA"
+  - arrow
+  - "\u666E\u653B"
+  - "\u5EFA\u9020\u70B9"
+  - "\u5854"
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - background
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 1325771309
+    locked: 0
+  - name: "\u5EFA\u9020\u70B9"
+    uniqueID: 3443991923
+    locked: 0
+  - name: "\u5854"
+    uniqueID: 1903800723
+    locked: 0
+  - name: character
+    uniqueID: 597584611
+    locked: 0
+  - name: "\u7269\u54C1"
+    uniqueID: 2497657867
+    locked: 0
+  - name: "\u654C\u4EBA"
+    uniqueID: 40694635
+    locked: 0
+  - name: skill
+    uniqueID: 3240205595
+    locked: 0

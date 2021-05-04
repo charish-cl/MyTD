@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2cf5e4f0-28e5-44f6-af67-2f5a9105fbe7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9C137A4-EE51-4818-8B94-568683928C06/8c/d7f240e2/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8c/b04a0c8f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Singleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Json/UIPanelJson.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Json/UIPanelTypeJson.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BasePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DicTool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfoList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PathFind.cs" />
+      <option value="$PROJECT_DIR$/Assets/Low_Swordman/Demo/Scripts/Swordman.cs" />
+      <option value="$PROJECT_DIR$/Assets/Low_Swordman/Demo/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/BaseElement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseCharacterElement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/TimeTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimeItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimerItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimerManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/HeroTime.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseElement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/EnermySpawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/EnermyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1rufAh6tUnOUsPcShWNmpLm7oYe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2cf5e4f0-28e5-44f6-af67-2f5a9105fbe7" name="Default Changelist" comment="" />
+      <created>1619830755518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619830755518</updated>
+      <workItem from="1619830760185" duration="6010000" />
+      <workItem from="1619844835818" duration="7706000" />
+      <workItem from="1619865784399" duration="475000" />
+      <workItem from="1619868052546" duration="9569000" />
+      <workItem from="1619921132425" duration="2700000" />
+      <workItem from="1619927294941" duration="2359000" />
+      <workItem from="1620016863692" duration="5033000" />
+      <workItem from="1620047909041" duration="3206000" />
+      <workItem from="1620051704669" duration="3349000" />
+      <workItem from="1620138103126" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

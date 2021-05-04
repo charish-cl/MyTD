@@ -1,0 +1,32 @@
+<Elements>
+<Waves>
+<Wave waittime="0">
+ <Enermy EnermyType="龙">
+    2
+ </Enermy>
+ <Enermy EnermyType="小怪">
+    2
+ </Enermy>
+</Wave>
+<Wave waittime="2">
+ <Enermy EnermyType="小怪">
+    5
+ </Enermy>
+ <Enermy EnermyType="龙">
+    2
+ </Enermy>
+
+</Wave>
+<Wave waittime="2">
+
+
+</Wave>
+<Wave waittime="2">
+
+
+</Wave>
+
+</Waves>
+</Elements>
+
+
