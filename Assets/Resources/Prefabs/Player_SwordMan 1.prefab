@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1442385958801357478}
   - component: {fileID: 2876652390455940919}
   m_Layer: 2
-  m_Name: Player_SwordMan
+  m_Name: Player_SwordMan 1
   m_TagString: "\u5854"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,8 +107,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442385958801357474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.839, y: 0, z: 0}
-  m_LocalScale: {x: 0.45101, y: 0.45101, z: 0.45101}
+  m_LocalPosition: {x: -1.845, y: 0.13832, z: 0}
+  m_LocalScale: {x: 0.42094502, y: 0.42094502, z: 0.42094502}
   m_Children:
   - {fileID: 1442385958963644756}
   m_Father: {fileID: 0}
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _state: 0
   targetenermy: {fileID: 0}
+  attackdistance: 0.5
 --- !u!1 &1442385958861935216
 GameObject:
   m_ObjectHideFlags: 0

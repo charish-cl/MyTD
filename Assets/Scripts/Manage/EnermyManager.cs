@@ -38,8 +38,8 @@ namespace Manage
 
        
         void OnEnermyDead(object o,EventArgs e){
-            var temp = o as Enermys;
-           GameManager.Instance.money+=temp.coin;
+           //  var temp = o as Enermys;
+           // GameManager.Instance.money+=temp.coin;
             
         }
         

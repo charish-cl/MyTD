@@ -11,8 +11,10 @@ public enum EnermyState
 {
     Run,
     Damage,
-    Recover
+    Recover,
+    Dead
 }
+[RequireComponent(typeof(PathFind))]
 public class Enermys : MonoBehaviour
 {
  
@@ -34,19 +36,18 @@ public class Enermys : MonoBehaviour
    
    public bool IsDead;
    public SpriteRenderer spriteRenderer;
+   private GameObject targetHero;
+
   
-    /// <summary>
-    /// 敌人受伤害事件
-    /// </summary>
-   public event EventHandler EnermyDamageEvent;
    /// <summary>
    /// 敌人死亡事件
    /// </summary>
    public event EventHandler EnermyDeadEvent;
-   
+   private Animator animator;
    void Start()
    {
-       spriteRenderer=this.GetComponent<SpriteRenderer>();
+       animator = this.transform.Find("model").GetComponent<Animator>();
+       
    }
 
    private void OnEnable()
@@ -57,14 +58,20 @@ public class Enermys : MonoBehaviour
 
    void Update()
    {
+        
+      
         switch (enermystate)
        {
-           case EnermyState.Damage:  
+           case EnermyState.Damage: 
            break;
            case EnermyState.Recover:
            StartCoroutine(Recover());
            break;
            case EnermyState.Run:
+           animator.Play("Run");
+           break;
+           case EnermyState.Dead:
+           StartCoroutine(OnDead());
            break;
            
        }
@@ -76,21 +83,27 @@ public class Enermys : MonoBehaviour
    public void OnDamaged(int damage){
        spriteRenderer.material.SetFloat("_FlashAmount", 1);
        CurrentHp-=damage;
-       if(CurrentHp<=0)  OnDead();
-       enermystate=EnermyState.Recover;
+       if(CurrentHp<=0) enermystate=EnermyState.Dead;
+       else enermystate=EnermyState.Recover;
+       
    }
-   public void OnDead()
+   public IEnumerator OnDead()
    { 
-       IsDead = true;
+   
+      IsDead = true;
+      yield return new WaitForSeconds(0.1f);//稍微延迟一会再读取动画时间
+      animator.Play("Die");
+      var sawAnimState =animator.GetCurrentAnimatorStateInfo(0);//读取当前动画事件的时间
+      yield return new WaitForSeconds(sawAnimState.length);//动画执行完成后
       this.gameObject.SetActive(false);
-      //在gamemanager绑定onEnermyDead事件
-      EnermyDeadEvent(this,null);
+
+      enermystate = EnermyState.Run;
    }
    private IEnumerator Recover(){
        enermystate=EnermyState.Run;
        yield return new WaitForSeconds(0.1f);
        spriteRenderer.material.SetFloat("_FlashAmount", 0);
    }
-
+ 
  
 }

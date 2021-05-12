@@ -25,9 +25,9 @@ public class EnermySpawn : Singleton<EnermySpawn>
 
     public GameObject EnermyBuilder(string key)
     {
-        var go = GameObject.Instantiate(GameObjectPool.GetPooledObject(key), 
-            bornpoint.transform.position,
-            new Quaternion());
+        var go = GameObjectPool.GetPooledObject(key);
+        go.transform.position = bornpoint.transform.position;
+
         return go;
     }
 }

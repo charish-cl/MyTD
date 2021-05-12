@@ -1,11 +1,9 @@
 <Elements>
 <Waves>
 <Wave waittime="0">
- <Enermy EnermyType="龙">
-    2
- </Enermy>
+
  <Enermy EnermyType="小怪">
-    2
+    3
  </Enermy>
 </Wave>
 <Wave waittime="2">

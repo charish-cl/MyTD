@@ -23,7 +23,7 @@ namespace Hero
         private Vector3 target;
         private Vector3 localscale;
         public GameObject targetenermy;
-        public float attackdistance = 1;
+        public float attackdistance = 0.5f;
         private Timer _timer;
         private bool isattcktime;
         private Camera _camera;
@@ -71,12 +71,14 @@ namespace Hero
 
         private void FindEnermy()
         {
-            foreach (var enermy in GameObject.FindGameObjectsWithTag("敌人"))
+            animator.Play("Idle");
+            if(GameObjectPool._enermypool.Count==0) return;
+            foreach (var enermy in GameObjectPool._enermypool.Where(e=>e.activeInHierarchy))
             {
-                if (!enermy.activeInHierarchy) break;
-                if (Vector2.Distance(transform.position, enermy.gameObject.GetComponent<Transform>().position) <
-                    attackdistance)
+                Debug.Log("开始遍历");
+                if (Vector2.Distance(transform.position,enermy.transform.position)<attackdistance)
                 {
+                    Debug.Log("执行");
                     targetenermy = enermy;
                     _state = HeroState.Attack;
                     return;
@@ -91,23 +93,23 @@ namespace Hero
             {
                 //敌人死亡或者超出攻击范围，停止攻击切换状态
                 if (Vector2.Distance(transform.position, targetenermy.gameObject.GetComponent<Transform>().position) >
-                    attackdistance
-                    || targetenermy.gameObject.GetComponent<Enermys>().IsDead)
+                    attackdistance||targetenermy.gameObject.GetComponent<Enermys>().IsDead)
                 {
-                    Debug.Log("停止");
-                    animator.Play("Idle");
                     _state = HeroState.Idle;
                     return;
                 }
-
                 //调整攻击方向
                 Flip(targetenermy.transform.position);
                 animator.Play("Attack");
                 isattacktime = true;
-                _timer = Timer.Register(1f, () =>
+                //获取攻击动画时间
+                var animState = animator.GetCurrentAnimatorStateInfo(0);
+                _timer = Timer.Register(animState.length, () =>
                 {
                     Debug.Log("攻击");
-                    targetenermy.GetComponent<Enermys>().OnDamaged(1);
+                    targetenermy.GetComponent<Enermys>().OnDamaged(5);
+                    
+                   
                     isattacktime = false;
                 });
             }

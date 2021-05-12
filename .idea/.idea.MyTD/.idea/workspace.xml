@@ -16,8 +16,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9C137A4-EE51-4818-8B94-568683928C06/8c/d7f240e2/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/89/8ed4fc8e/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8a/bac77b40/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8c/b04a0c8f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -36,7 +38,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfoList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PathFind.cs" />
       <option value="$PROJECT_DIR$/Assets/Low_Swordman/Demo/Scripts/Swordman.cs" />
       <option value="$PROJECT_DIR$/Assets/Low_Swordman/Demo/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Test.cs" />
@@ -49,13 +50,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/HeroTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/EnermySpawn.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/EnermyManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TestGit.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PathFind.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Xml/WaveEnermy.xml" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/EnermyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/EnermySpawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rufAh6tUnOUsPcShWNmpLm7oYe" />
@@ -64,13 +67,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35647896" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="RiderDpaPageId" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -83,10 +87,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1468">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="1468" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -114,6 +118,9 @@
       <workItem from="1620138103126" duration="1000" />
       <workItem from="1620140224906" duration="13000" />
       <workItem from="1620141386565" duration="23000" />
+      <workItem from="1620779266459" duration="3291000" />
+      <workItem from="1620782601412" duration="421000" />
+      <workItem from="1620783138748" duration="6667000" />
     </task>
     <servers />
   </component>

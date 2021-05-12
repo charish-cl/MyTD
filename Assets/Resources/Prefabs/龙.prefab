@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 829663008739284079}
   - component: {fileID: 829663008739284080}
   - component: {fileID: 829663008739284081}
-  - component: {fileID: 746234576134882815}
+  - component: {fileID: -265911152232774717}
   m_Layer: 0
   m_Name: "\u9F99"
   m_TagString: "\u654C\u4EBA"
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.56
---- !u!114 &746234576134882815
+--- !u!114 &-265911152232774717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +113,7 @@ MonoBehaviour:
   enermystate: 0
   CurrentHp: 0
   Hp: 5
-  coin: 20
+  coin: 0
   eneymy_Atk: 0
   IsDead: 0
   spriteRenderer: {fileID: 0}
