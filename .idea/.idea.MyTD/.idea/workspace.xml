@@ -20,6 +20,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8a/bac77b40/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GamePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8c/b04a0c8f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -32,7 +33,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/DicTool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuPanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfo.cs" />
@@ -51,14 +51,21 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TestGit.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PathFind.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Xml/WaveEnermy.xml" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/EnermyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/EnermySpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/TimberManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/State.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Run.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Idle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/GamePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rufAh6tUnOUsPcShWNmpLm7oYe" />
@@ -87,10 +94,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1468">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1468" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -121,6 +128,11 @@
       <workItem from="1620779266459" duration="3291000" />
       <workItem from="1620782601412" duration="421000" />
       <workItem from="1620783138748" duration="6667000" />
+      <workItem from="1620830217335" duration="1136000" />
+      <workItem from="1620914994812" duration="4469000" />
+      <workItem from="1620919599067" duration="2565000" />
+      <workItem from="1620956102174" duration="2216000" />
+      <workItem from="1620959491190" duration="2156000" />
     </task>
     <servers />
   </component>

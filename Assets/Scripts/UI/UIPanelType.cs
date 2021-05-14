@@ -4,6 +4,7 @@
         public const string panel = "panel1";
         public const string pane2 = "panel2";
         public const string pane3 = "panel3";
+        public const string GamePanel = "GamePanel";
         
         // public const string Knapsack = "Knapsack";
         // public const string ItemMessage = "ItemMessage";

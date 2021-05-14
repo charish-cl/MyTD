@@ -14,7 +14,7 @@ public enum EnermyState
     Recover,
     Dead
 }
-[RequireComponent(typeof(PathFind))]
+
 public class Enermys : MonoBehaviour
 {
  
@@ -83,8 +83,10 @@ public class Enermys : MonoBehaviour
    public void OnDamaged(int damage){
        spriteRenderer.material.SetFloat("_FlashAmount", 1);
        CurrentHp-=damage;
-       if(CurrentHp<=0) enermystate=EnermyState.Dead;
-       else enermystate=EnermyState.Recover;
+       if(CurrentHp<=0) 
+           enermystate=EnermyState.Dead;
+       else 
+           enermystate=EnermyState.Recover;
        
    }
    public IEnumerator OnDead()
@@ -93,11 +95,10 @@ public class Enermys : MonoBehaviour
       IsDead = true;
       yield return new WaitForSeconds(0.1f);//稍微延迟一会再读取动画时间
       animator.Play("Die");
-      var sawAnimState =animator.GetCurrentAnimatorStateInfo(0);//读取当前动画事件的时间
-      yield return new WaitForSeconds(sawAnimState.length);//动画执行完成后
+      
+      yield return new WaitForSeconds(0.5f);//动画执行完成后
       this.gameObject.SetActive(false);
 
-      enermystate = EnermyState.Run;
    }
    private IEnumerator Recover(){
        enermystate=EnermyState.Run;

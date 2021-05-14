@@ -4,6 +4,7 @@ using System.Net;
 using System.Collections;
 using System.Collections.Generic;
 using Manage;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,6 +36,7 @@ public class GameManager : MonoSingletion<GameManager>
     private void Awake()
     {
         GameObjectPool.CreatPool();
+        // UIPanelManager.Instance.PushPanel(UIPanelType.GamePanel);
     }
     void  Start(){ 
         XmlUntity.GetInstance().Read();
