@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 /// <summary>
@@ -28,6 +29,7 @@ public class Arrow : MonoBehaviour
         //     (pointB.position.y-transform.position.y)/time-0.5f*g*time, (pointB.position.z - transform.position.z) / time);
         // Gravity = Vector3.zero;
         //重力初始速度为0
+
     }
 
     private float dTime = 0;
@@ -40,22 +42,23 @@ public class Arrow : MonoBehaviour
         //  //模拟位移
         // transform.Translate(speed*Time.fixedDeltaTime);
         // transform.Translate(Gravity * Time.fixedDeltaTime);   
+       
         this.transform.position =
-                Vector2.MoveTowards(this.transform.position, pointB.position, Time.deltaTime * 5.0f);
+                Vector2.MoveTowards(this.transform.position, pointB.position, Time.deltaTime *7.0f);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("触发");
         if (other.gameObject.tag.Equals("敌人"))
         {
-            this.GetComponent<Collider2D>().enabled = false;
-            other.gameObject.GetComponent<Enermys>().OnDamaged(damage);
+            other.gameObject.GetComponent<Enermys>().OnDamage(damage);
             this.gameObject.SetActive(false);
         }
     }
 
-    private void OnEnable()
-    {
-        this.GetComponent<Collider2D>().enabled = true;
-    }
+   
+
+    
+    
 }

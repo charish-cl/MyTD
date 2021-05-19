@@ -11,30 +11,22 @@ namespace Hero
         {
             _Hero = hero;
         }
-        public void OnStateEnter()
-        {
-         
-        }
-
         public void OnStateUpdate()
         {
           FindEnermy();
         }
 
-        public void OnStateExit()
-        {
-          
-        }
         private void FindEnermy()
         {
             if(GameObjectPool._enermypool.Count==0) return;
-            foreach (var enermy in GameObjectPool._enermypool.Where(e=>e.activeInHierarchy))
+            foreach (var enermy in GameObjectPool._enermypool.Where(e=>
+                !e.GetComponent<Enermys>().IsDead))
             {
                
-                if (Vector2.Distance(_Hero.transform.position,enermy.transform.position)<_Hero.attackdistance)
+                if (Vector2.Distance(_Hero.transform.position,enermy.transform.position)<_Hero.attackdistance+1)
                 {
                     _Hero.targetenermy = enermy;
-                    _Hero.SetState(new Attack(_Hero));
+                   _Hero.SetState(new Run(_Hero));
                     return;
                 }
             }

@@ -17,24 +17,18 @@ public enum GameState
 }
 public class GameManager : MonoSingletion<GameManager>
 {
-    [Header("游戏状态")]
+    /// <summary>
+    /// 游戏状态
+    /// </summary>
     public GameState gameState;
     
     [Header("敌人生成器")]
     public EnermySpawn spawn;
 
-    [Header("目前敌人数量")]
-    public int enermycount;
-
-    [Header("总金币")]
-    public int money;
-
-    [Header("金币显示")]
-    public  Text text;
-
-
     private void Awake()
     {
+        
+        
         GameObjectPool.CreatPool();
         // UIPanelManager.Instance.PushPanel(UIPanelType.GamePanel);
     }
@@ -59,18 +53,7 @@ public class GameManager : MonoSingletion<GameManager>
           break;
           
       }
-    //点击事件
       
-			// if(Input.GetMouseButtonDown(0))
-      // {
-      // Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-			// RaycastHit2D hit = Physics2D.Raycast (new Vector2(myRay.origin.x, myRay.origin.y), Vector2.down);
-      //   if(!hit.Equals(null))
-      //   {
-      //     if (hit.collider.tag.Equals("建造点"))   Build(hit.transform);  
-         
-      //   }
-      // }
       // if (Input.GetMouseButtonDown(0))
       // {
       //     Collider2D[] col = Physics2D.OverlapPointAll(Camera.main.ScreenToWorldPoint(Input.mousePosition));
@@ -91,10 +74,7 @@ public class GameManager : MonoSingletion<GameManager>
         StartCoroutine(EnermyManager.GetInstance().Action());
       }
   }
-  void RefreshUI()
-  {
-      text.text=money.ToString();    
-  }
+
   
   
  

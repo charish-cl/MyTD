@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
+﻿
+using Character;
 using DG.Tweening;
 using UnityEngine;
 
 namespace Hero
 {
-    public class Hero : MonoBehaviour
+    public class Hero : BaseCharacterElement,IBaseCharacterAction
     {
 
         public Animator animator;
@@ -20,14 +19,13 @@ namespace Hero
         private Vector3 localscale;
         public GameObject targetenermy;
         private Camera _camera;
-        
+        public Vector3 Idlepos;
         private State _herostate;
-        private bool state_start;
-
+        private Tweener _tweener;
         private void Start()
         {
             _herostate =new Idle(this) ;
-            
+            Idlepos = transform.position;
             _camera = Camera.main;
             animator = this.transform.Find("model").GetComponent<Animator>();
             target = this.transform.position;
@@ -37,18 +35,7 @@ namespace Hero
 
         private void Update()
         {
-         
-            if (!state_start)
-            {
-                _herostate.OnStateEnter();
-                state_start = true;
-            }
-
-            if (state_start)
-            {
-                _herostate.OnStateUpdate();
-            }
-
+            _herostate.OnStateUpdate();
         }
 
         private void LateUpdate()
@@ -61,12 +48,12 @@ namespace Hero
             
             if (Input.GetMouseButtonDown(1))
             {
+                 _tweener.Kill();
                 target = _camera.ScreenToWorldPoint(Input.mousePosition);
                 float distance = Vector2.Distance(this.transform.position, target);
                 Flip(target);
                 animator.SetBool("IsRun",true);
-                transform.DOMove(new Vector3(target.x, target.y, 0), distance * movespeed);
-                
+               _tweener= transform.DOMove(new Vector3(target.x, target.y, 0), distance * movespeed);
             }
 
             if (Vector2.Distance(this.transform.position, target) < 0.2f)
@@ -74,12 +61,10 @@ namespace Hero
                 animator.SetBool("IsRun",false);
             }
         }
-        public void SetState(State _state)
+        public void SetState( State  _state)
         {
-            _herostate.OnStateExit();
             _herostate = _state;
-            state_start = false;
-
+           // Debug.Log(_state);
         }
         public void Flip(Vector3 target)
         {
@@ -93,6 +78,21 @@ namespace Hero
             }
 
             transform.localScale = new Vector3((isflip ? 1 : -1) * localscale.x, localscale.y, localscale.z);
+        }
+
+        public void Attack()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnDamage(float damage)
+        {
+           
+        }
+
+        public void OnDead()
+        {
+          
         }
     }
 }

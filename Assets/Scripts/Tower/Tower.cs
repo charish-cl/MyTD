@@ -1,86 +1,72 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Character;
+using DG.Tweening;
 using UnityEngine;
-
-public class Tower : MonoBehaviour
+public class Idle:TowerState
 {
-    public enum TowerState
+    public Tower _Tower;
+
+    public Idle(Tower tower)
     {
-        Idle,
-        Attack,
-        Wait
+        _Tower = tower;
     }
 
-    public TowerState state = TowerState.Idle;
-    [Header("花费")] public int cost;
-    [Header("攻击物品种类")] public GameObject weapon;
-
-    [Header("攻击间隔")] public float WaitTime = 2;
-    [Header("当前范围内的敌人")] public List<GameObject> targetpool;
-
-
-    void ChangeState(TowerState state)
+    public void Handle()
     {
-        this.state = state;
-    }
-    
-    void Awake()
-    {
-        targetpool = new List<GameObject>();
-    }
-
-    void FixedUpdate()
-    {
-        switch (state)
+        if (_Tower.FindEnermy())
         {
-            case TowerState.Idle:
-                break;
-            case TowerState.Attack:
-                StartCoroutine("Attack");
-                break;
-            case TowerState.Wait:
-                break;
+            _Tower.SetState(new Attack(_Tower));
         }
+    
+    }
+}
+public class Attack:TowerState
+{
+    public Tower _Tower;
+    private float _time;
+    public Attack(Tower tower)
+    {
+        _time = 0;
+        _Tower = tower;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void Handle()
     {
-        //发现敌人改变状态
-        if (other.tag == "敌人")
+        _time += Time.deltaTime;
+        if (_time >= 1 / _Tower.attackspeed)
         {
-            targetpool.Add(other.gameObject);
-            if (state.Equals(TowerState.Idle))
+            _time -= 1 / _Tower.attackspeed;
+            if(!_Tower.IsStopAttack())  _Tower.Attack();
+            else
             {
-                ChangeState(TowerState.Attack);
-                //  Debug.Log("发现敌人"); 
+                _Tower.SetState(new Idle(this._Tower));
             }
         }
     }
-
-    IEnumerator Attack()
+}
+public class Tower : BaseTower
+{
+    private void Start()
     {
-        ChangeState(TowerState.Wait);
-
-        if (weapon.Equals(null)) Debug.Log("武器未挂载");
-
-        GameObject arrow =GameObjectPool.GetPooledObject(weapon.name);
-        arrow.GetComponent<Transform>().position=this.transform.position;
-        arrow.GetComponent<Arrow>().pointB = targetpool[0].transform;
-        
-        yield return new WaitForSecondsRealtime(WaitTime);
-
-
-        //可能会在敌人要走出的时候在攻击间隔时间
-        if (targetpool.Count != 0)
-            ChangeState(TowerState.Attack);
-        else
-            ChangeState(TowerState.Idle);
+        Init(1, 1, 0.5f, 3, "Arrow", null, new Idle(this));
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    private void Update()
     {
-        if (targetpool.Contains(other.gameObject))
-            targetpool.Remove(other.gameObject);
+        state.Handle();
     }
+
+    public  void Attack()
+    {
+        GameObject arrow =GameObjectPool.GetPooledObject(weapon);
+        arrow.transform.position=this.transform.position;
+        arrow.GetComponent<Arrow>().pointB = target.transform;
+        var engle = this.transform.position - target.transform.position;
+        arrow.transform.rotation =new Quaternion(engle.x,engle.y,engle.z,0) ;
+    }
+
+
+   
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385958775068044}
   - component: {fileID: 1442385958775068047}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Weapon-Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,8 +92,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385958801357478}
   - component: {fileID: -279967607483610971}
-  - component: {fileID: 7570176647156786552}
-  m_Layer: 2
+  - component: {fileID: 1406177448205794692}
+  m_Layer: 0
   m_Name: "\u5C0F\u602A"
   m_TagString: "\u654C\u4EBA"
   m_Icon: {fileID: 0}
@@ -127,26 +127,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768ae6d7192758f4187048b6b70b81c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enermystate: 0
-  CurrentHp: 0
-  Hp: 5
-  coin: 0
-  eneymy_Atk: 0
   IsDead: 0
+  CurrentHp: 0
+  coin: 0
+  target: {fileID: 0}
   spriteRenderer: {fileID: 1442385959051147050}
---- !u!114 &7570176647156786552
-MonoBehaviour:
+  animator: {fileID: 0}
+--- !u!61 &1406177448205794692
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442385958801357474}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b1fa53ae2908324e9053a0c7b602581, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0.3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.022259593, y: 0.21517216}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.68837094, y: 1.2225924}
+  m_EdgeRadius: 0
 --- !u!1 &1442385958861935216
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385958861935219}
   - component: {fileID: 1442385958861935218}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385958963644756}
   - component: {fileID: 1442385958963644757}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385959051147051}
   - component: {fileID: 1442385959051147050}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385959301499147}
   - component: {fileID: 1442385959301499146}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385959360055015}
   - component: {fileID: 1442385959360055014}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Hat-Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385959437162459}
   - component: {fileID: 1442385959437162458}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1442385959731506902}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1442385959820662925}
   - component: {fileID: 1442385959820662924}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Leg (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

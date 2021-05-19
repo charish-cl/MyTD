@@ -161,7 +161,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Attack
-  m_Speed: 0.5
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101072185182521882}
@@ -353,7 +353,7 @@ AnimatorStateMachine:
     m_Position: {x: 450, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102160296567960970}
-    m_Position: {x: 348, y: -48, z: 0}
+    m_Position: {x: 350, y: -50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102478459752312012}
     m_Position: {x: 540, y: 240, z: 0}

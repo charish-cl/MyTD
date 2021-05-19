@@ -22,14 +22,14 @@ public class TowerBuild: MonoBehaviour
   
      GameObject go= Instantiate(Resources.Load("Prefabs/"+name),current_Pos.position,new Quaternion()) as GameObject;
      var cost=go.GetComponent<Tower>().cost;
-     if(game.money<cost) {
-       Debug.Log("金币不足");
-       return;
-      }
-     else{
-       game.money-=cost;
-       game.text.text=game.money.ToString();
-     }
+     // if(game.money<cost) {
+     //   Debug.Log("金币不足");
+     //   return;
+     //  }
+     // else{
+     //   game.money-=cost;
+     //   game.text.text=game.money.ToString();
+     // }
      
    }
 }

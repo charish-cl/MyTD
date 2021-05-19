@@ -12,7 +12,7 @@ public class Singleton<T> where T:new()
     public static T GetInstance()
     {
         if(instance==null) 
-        instance=new T();
+            instance=new T();
         return instance;
     }
 }

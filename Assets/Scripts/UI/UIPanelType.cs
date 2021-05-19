@@ -1,10 +1,12 @@
-﻿namespace UI
+﻿using System;
+
+namespace UI
 {
-    public class UIPanelType {
-        public const string panel = "panel1";
-        public const string pane2 = "panel2";
-        public const string pane3 = "panel3";
-        public const string GamePanel = "GamePanel";
+    public enum UIPanelType {
+        panel1,
+        panel2,
+        panel3,
+        GamePanel
         
         // public const string Knapsack = "Knapsack";
         // public const string ItemMessage = "ItemMessage";
@@ -13,5 +15,5 @@
         // public const string System = "System";
         // public const string Task = "Task";
     }
-  
+   
 }

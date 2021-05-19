@@ -35,18 +35,16 @@ public  class GameObjectPool
                 }
             }
         }
-
-       
         return CreatObject(key);
     }
 
-    public static GameObject  CreatObject(string key)
+    private  static GameObject  CreatObject(string key)
     {
         //池子有键值但无可用的物品
         GameObject obj =GameObject.Instantiate(Resources.Load("Prefabs/" + key) as GameObject,new Vector3(),new Quaternion()) ;
         if (obj.tag == "敌人")
         {
-            Debug.Log("加入");
+        
             _enermypool.Add(obj);
         }
         pool[key].Add(obj);

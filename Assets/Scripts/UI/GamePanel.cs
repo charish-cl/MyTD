@@ -8,7 +8,7 @@ public class GamePanel :BasePanel
     
     public override void OnEnter()
     {
-    
+        
     }
 
     public override void OnPause()

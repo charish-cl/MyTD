@@ -27,7 +27,7 @@ public class EnermySpawn : Singleton<EnermySpawn>
     {
         var go = GameObjectPool.GetPooledObject(key);
         go.transform.position = bornpoint.transform.position;
-
+       
         return go;
     }
 }

@@ -2,6 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    /// <summary>
+    /// json对象
+    /// </summary>
     [Serializable]
     public class UIPanelInfoList
     {

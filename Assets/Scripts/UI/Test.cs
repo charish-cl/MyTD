@@ -18,14 +18,14 @@ public class Test : MonoBehaviour
 
     void OpenPanel1()
     {
-        UIPanelManager.Instance.PushPanel(UIPanelType.panel);
+        UIPanelManager.Instance.PushPanel(UIPanelType.panel1);
     }
     void OpenPanel2()
     {
-        UIPanelManager.Instance.PushPanel(UIPanelType.pane2);
+        UIPanelManager.Instance.PushPanel(UIPanelType.panel2);
     }
     void OpenPanel3()
     {
-        UIPanelManager.Instance.PushPanel(UIPanelType.pane3);
+        UIPanelManager.Instance.PushPanel(UIPanelType.panel3);
     }
 }

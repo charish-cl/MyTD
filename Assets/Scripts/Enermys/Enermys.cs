@@ -1,110 +1,168 @@
 ﻿using System;
-using System.Net.Mime;
-using System.Collections;
-using System.Collections.Generic;
+using Character;
 using UnityEngine;
-using UnityEngine.UI;
 /// <summary>
 /// 敌人状态
 /// </summary>
-public enum EnermyState
+public interface EnermyState
 {
-    Run,
-    Damage,
-    Recover,
-    Dead
+   void  Handle();
 }
 
-public class Enermys : MonoBehaviour
+class PathFinding:EnermyState
+{
+    
+    public Enermys enermys;
+
+   public PathFinding(Enermys enermys)
+    {
+        this.enermys = enermys;
+    }
+    public void Handle()
+    {
+        enermys.ArrivePoint();
+    }
+
+}
+
+class EnermyAttack:EnermyState
+{
+    public Enermys enermys;
+
+    public EnermyAttack(Enermys enermys)
+    {
+        this.enermys = enermys;
+        enermys.animator.SetBool("IsAttack",true);
+    }
+    public void Handle()
+    {
+        enermys.Attack();
+    }
+ 
+}
+
+public class Enermys :BaseCharacterElement,IBaseCharacterAction
 {
  
+    Transform[] waypoint;
+    GameObject Waypoint;
+    private int currenIndex = 1;
     
-   public EnermyState enermystate=EnermyState.Run;
-//    private Renderer renderer; 
-//    public Transform redhp;
-   [SerializeField]
-   private float CurrentHp;
-
-   [Header("血量")]
-   public float Hp=5;
-
+    
+   public EnermyState enermystate;
+   public float CurrentHp;
    [Header("赏金")]
    public int coin;
-
-   [Header("攻击力")]
-   public int eneymy_Atk;
    
-   public bool IsDead;
+   public GameObject target;
    public SpriteRenderer spriteRenderer;
-   private GameObject targetHero;
+   
 
   
    /// <summary>
    /// 敌人死亡事件
    /// </summary>
    public event EventHandler EnermyDeadEvent;
-   private Animator animator;
+   public Animator animator;
    void Start()
    {
+       Init(
+           5,1,1,1,1,1
+       );
        animator = this.transform.Find("model").GetComponent<Animator>();
-       
+       GetWaypoint();
+       enermystate = new PathFinding(this);
+       CurrentHp = this.hp;
    }
 
    private void OnEnable()
    {
-       CurrentHp=Hp;
+       CurrentHp = this.hp;
        IsDead = false;
    }
 
    void Update()
    {
-        
-      
-        switch (enermystate)
-       {
-           case EnermyState.Damage: 
-           break;
-           case EnermyState.Recover:
-           StartCoroutine(Recover());
-           break;
-           case EnermyState.Run:
-           animator.Play("Run");
-           break;
-           case EnermyState.Dead:
-           StartCoroutine(OnDead());
-           break;
-           
-       }
+       enermystate.Handle();
    }
    /// <summary>
    /// 敌人收到伤害
    /// </summary>
    /// <param name="ondamage">伤害</param>
-   public void OnDamaged(int damage){
+   public void OnDamage(int damage){
        spriteRenderer.material.SetFloat("_FlashAmount", 1);
+       Timer.Register(0.2f, () => { spriteRenderer.material.SetFloat("_FlashAmount", 0); });
        CurrentHp-=damage;
-       if(CurrentHp<=0) 
-           enermystate=EnermyState.Dead;
-       else 
-           enermystate=EnermyState.Recover;
-       
+       if (CurrentHp <= 0) OnDead();
+    
    }
-   public IEnumerator OnDead()
-   { 
-   
-      IsDead = true;
-      yield return new WaitForSeconds(0.1f);//稍微延迟一会再读取动画时间
+
+   public void Attack()
+   {
+       //攻击行为
+       //敌人死亡或者超出攻击范围，停止攻击切换状态
+       if (Vector2.Distance(transform.position, target.transform.position) >
+         attackdistance||target.gameObject.GetComponent<Hero.Hero>().IsDead)
+       {
+                  
+          animator.SetBool("IsAttack",false);
+          SetState(new PathFinding(this));
+          return;
+       }
+
+       var animatorInfo =animator.GetCurrentAnimatorStateInfo (0);
+            
+       if ((animatorInfo.normalizedTime%1.0>=0.99f))//normalizedTime: 范围0 -- 1,  0是动作开始，1是动作结束
+       {
+  
+           // Debug.Log("攻击");
+           // target.GetComponent<Hero.Hero>().OnDamage(1);//播放完成后敌人收到伤害
+       }
+   }
+
+   public void OnDamage(float damage)
+   {
+       throw new NotImplementedException();
+   }
+
+   public void OnDead()
+   {
+       IsDead = true;
+    //稍微延迟一会再读取动画时间
       animator.Play("Die");
-      
-      yield return new WaitForSeconds(0.5f);//动画执行完成后
+      //动画执行完成后
       this.gameObject.SetActive(false);
 
    }
-   private IEnumerator Recover(){
-       enermystate=EnermyState.Run;
-       yield return new WaitForSeconds(0.1f);
-       spriteRenderer.material.SetFloat("_FlashAmount", 0);
+
+   public void ArrivePoint()
+   {
+       transform.position = Vector2.MoveTowards(transform.position, waypoint[currenIndex].position, movespeed * Time.deltaTime);
+       if (Vector2.Distance(transform.position, waypoint[currenIndex].position) < 0.05f)
+       {
+           currenIndex++;
+           if (currenIndex == waypoint.Length)
+           {
+             gameObject.SetActive(false);
+           }
+       }
+
+       if (target != null)
+       {
+            SetState(new EnermyAttack(this));
+       }
    }
- 
- 
+
+   public void SetState(EnermyState state)
+   {
+       enermystate = state;
+   }
+   public void GetWaypoint()
+   {
+       Waypoint = GameObject.Find("waypoint");
+       if (Waypoint.Equals(null)) Debug.Log("场景中未创建waypoint对象");
+       waypoint = Waypoint.GetComponentsInChildren<Transform>();
+   }
+
+
 }

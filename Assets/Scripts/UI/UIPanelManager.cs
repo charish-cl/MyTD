@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using LitJson;
+
 namespace UI
 {
  public class UIPanelManager
@@ -35,7 +36,7 @@ namespace UI
     
     private Dictionary<string, string> panelPathDict;
     
-    private Dictionary<string, BasePanel> panelDict;
+    private Dictionary<UIPanelType, BasePanel> panelDict;
     
     private Stack<BasePanel> panelStack;
 
@@ -44,8 +45,9 @@ namespace UI
         ParseUIPanelTypeJson();
     }
 
-    public void PushPanel(string panelType)
+    public void PushPanel(UIPanelType panelType)
     {
+        
         if (panelStack == null)
         {
             panelStack = new Stack<BasePanel>();
@@ -87,12 +89,12 @@ namespace UI
 
     }
 
-    private BasePanel GetPanel(string panelType)
+    private BasePanel GetPanel(UIPanelType panelType)
     {
 
         if (panelDict == null)
         {
-            panelDict = new Dictionary<string, BasePanel>();
+            panelDict = new Dictionary<UIPanelType, BasePanel>();
         }
 
         BasePanel panel = panelDict.GetValue(panelType);
@@ -100,14 +102,15 @@ namespace UI
         //如果没有实例化面板，寻找路径进行实例化，并且存储到已经实例化好的字典面板中
         if (panel == null)
         {
-            string path=panelPathDict.GetValue(panelType);
+            string path=panelPathDict.GetValue(panelType.ToString());
             GameObject panelGo = GameObject.Instantiate(Resources.Load<GameObject>(path), CanvasTransform, false);
             panel = panelGo.GetComponent<BasePanel>();
             panelDict.Add(panelType, panel);
         }
         return panel;
     }
-
+  
+    
     //解析json文件
     private void ParseUIPanelTypeJson()
     {
@@ -118,7 +121,7 @@ namespace UI
         foreach (UIPanelInfo panelInfo in panelInfoList.panelInfoList)
         {
             panelPathDict.Add(panelInfo.panelType, panelInfo.path);
-            Debug.Log(panelInfo.panelType + ":" + panelInfo.path);
+         
         }
     }
 }

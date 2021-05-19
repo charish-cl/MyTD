@@ -16,30 +16,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9C137A4-EE51-4818-8B94-568683928C06/8c/d7f240e2/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/89/8ed4fc8e/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.2f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8a/bac77b40/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GamePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8c/b04a0c8f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Texttip.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Singleton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Json/UIPanelJson.json" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Json/UIPanelTypeJson.json" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BasePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/InfoPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DicTool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfoList.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Low_Swordman/Demo/Scripts/Swordman.cs" />
-      <option value="$PROJECT_DIR$/Assets/Low_Swordman/Demo/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Test.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/BaseElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseCharacterElement.cs" />
@@ -48,24 +36,49 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimerItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/HeroTime.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseElement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TestGit.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PathFind.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Xml/WaveEnermy.xml" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/EnermyManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/EnermySpawn.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/TimberManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/ExpandUtil.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/TestEnum.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/GamePanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfoList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerBuild.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Singleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UITool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AnimationTools.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/PromtUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Texttip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/State.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Run.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/Timer/Source/Timer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterRectUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Idle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PathFind.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseElement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseAction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseCharacterElement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseCharacterAction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/AttackType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/IBaseCharacterAction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Attack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/GamePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/EnermySpawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Editor/BuilAB.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Run.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseTowerElement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Arrow.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rufAh6tUnOUsPcShWNmpLm7oYe" />
@@ -80,8 +93,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="RiderDpaPageId" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="showLigatures" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -104,6 +121,10 @@
       </option>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -133,6 +154,21 @@
       <workItem from="1620919599067" duration="2565000" />
       <workItem from="1620956102174" duration="2216000" />
       <workItem from="1620959491190" duration="2156000" />
+      <workItem from="1621050227258" duration="4004000" />
+      <workItem from="1621086000525" duration="2346000" />
+      <workItem from="1621088390658" duration="49000" />
+      <workItem from="1621088449951" duration="1777000" />
+      <workItem from="1621090828281" duration="397000" />
+      <workItem from="1621175759889" duration="3287000" />
+      <workItem from="1621210980358" duration="2686000" />
+      <workItem from="1621243879196" duration="2180000" />
+      <workItem from="1621249847072" duration="454000" />
+      <workItem from="1621250443421" duration="5357000" />
+      <workItem from="1621259739676" duration="4259000" />
+      <workItem from="1621264080475" duration="262000" />
+      <workItem from="1621300255713" duration="3834000" />
+      <workItem from="1621350449034" duration="329000" />
+      <workItem from="1621384470754" duration="5916000" />
     </task>
     <servers />
   </component>
@@ -140,5 +176,9 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
