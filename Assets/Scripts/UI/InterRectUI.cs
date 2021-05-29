@@ -67,6 +67,8 @@ namespace UI
                         {
                             case "建造点":
                                 towerbuild.transform.position = clickposition;
+                                
+                               towerbuild.GetComponent<TowerUI>().pos = hit.collider.transform.position;
                                 towerbuild.SetActive(true);
                                 break;
                             case "英雄":

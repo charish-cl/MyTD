@@ -38,9 +38,9 @@ namespace Hero
                 if ((time>=animatorInfo.length))//normalizedTime: 范围0 -- 1,  0是动作开始，1是动作结束
                 {
                     time -= animatorInfo.length;
-                    Debug.Log("攻击");
+                   // Debug.Log("攻击");
                     _Hero.targetenermy.GetComponent<Enermys>().OnDamage(1);//播放完成后敌人收到伤害
-                    Debug.Log(  _Hero.targetenermy.GetComponent<Enermys>().CurrentHp);
+                  //  Debug.Log(  _Hero.targetenermy.GetComponent<Enermys>().CurrentHp);
                 }
 
                

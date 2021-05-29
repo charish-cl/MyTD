@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿
 using Character;
 using DG.Tweening;
 using UnityEngine;
@@ -50,7 +48,7 @@ public class Tower : BaseTower
 {
     private void Start()
     {
-        Init(1, 1, 0.5f, 3, "Arrow", null, new Idle(this));
+        Init(1, 1, 1f, 3, "Arrow", null, new Idle(this));
     }
 
     private void Update()
@@ -62,9 +60,10 @@ public class Tower : BaseTower
     {
         GameObject arrow =GameObjectPool.GetPooledObject(weapon);
         arrow.transform.position=this.transform.position;
-        arrow.GetComponent<Arrow>().pointB = target.transform;
-        var engle = this.transform.position - target.transform.position;
-        arrow.transform.rotation =new Quaternion(engle.x,engle.y,engle.z,0) ;
+        
+        arrow.GetComponent<Arrow>().endTrans= target.transform;
+        arrow.GetComponent<Arrow>().Init();
+        // arrow.transform.DOLookAt(target.transform.position, 0.5f, AxisConstraint.None, null);
     }
 
 

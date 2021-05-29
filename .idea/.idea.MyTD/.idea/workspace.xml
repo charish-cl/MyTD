@@ -15,70 +15,75 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9C137A4-EE51-4818-8B94-568683928C06/8c/d7f240e2/Animator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/89/8ed4fc8e/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.2f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8a/bac77b40/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GamePanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/a8/aa86c841/Tween.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/TestPath.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Tes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8c/b04a0c8f/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Texttip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E9C137A4-EE51-4818-8B94-568683928C06/8c/d7f240e2/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/89/8ed4fc8e/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.3.2f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skill/Skill2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAFB29D5-2338-47FB-B4ED-CF8D7C32B1E3/b4/ab70e2f3/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skill/Skill1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TowerUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CDA0DA9E-454B-4A0D-9B19-813AB03014ED/8a/bac77b40/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Test.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/BaseElement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseCharacterElement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scenes/TimeTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimeItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimerItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/TimerManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/HeroTime.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TestGit.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Xml/WaveEnermy.xml" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/EnermyManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scenes/TimberManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/ExpandUtil.cs" />
       <option value="$PROJECT_DIR$/Assets/Scenes/TestEnum.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/GamePanel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelInfoList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIPanelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerBuild.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/Singleton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Manage/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UITool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AnimationTools.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PromtUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Texttip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/State.cs" />
-      <option value="$PROJECT_DIR$/Assets/Plugins/Timer/Source/Timer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterRectUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Idle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tools/PathFind.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Hero/BaseElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseAction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseCharacterElement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseCharacterAction.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/AttackType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/IBaseCharacterAction.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/EnermySpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/BuilAB.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Run.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/BaseTowerElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Arrow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LineScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Tower.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/TestPath.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillPanel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/Timer/Source/Timer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skill/BaseSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tower/TowerBuild.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/InterRectUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/TowerUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/MonoSingletion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tools/GameObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Xml/WaveEnermy.xml" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enermys/Enermys.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/EnermyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manage/GameData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skill/Skill2.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skill/Skill1.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Hero.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Idle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Hero/Run.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tower/Arrow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scenes/Tes.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rufAh6tUnOUsPcShWNmpLm7oYe" />
@@ -169,6 +174,14 @@
       <workItem from="1621300255713" duration="3834000" />
       <workItem from="1621350449034" duration="329000" />
       <workItem from="1621384470754" duration="5916000" />
+      <workItem from="1621471188349" duration="12000" />
+      <workItem from="1621471223550" duration="3249000" />
+      <workItem from="1621474556511" duration="176000" />
+      <workItem from="1621655926166" duration="6453000" />
+      <workItem from="1621989684684" duration="5727000" />
+      <workItem from="1622007165034" duration="12590000" />
+      <workItem from="1622027716187" duration="3713000" />
+      <workItem from="1622075565093" duration="2603000" />
     </task>
     <servers />
   </component>

@@ -17,6 +17,7 @@ class PathFinding:EnermyState
    public PathFinding(Enermys enermys)
     {
         this.enermys = enermys;
+       enermys.animator.SetBool("IsAttack",false);
     }
     public void Handle()
     {
@@ -56,9 +57,9 @@ public class Enermys :BaseCharacterElement,IBaseCharacterAction
    
    public GameObject target;
    public SpriteRenderer spriteRenderer;
-   
 
-  
+   private float time;
+   private GameTimer _timer;
    /// <summary>
    /// 敌人死亡事件
    /// </summary>
@@ -70,15 +71,20 @@ public class Enermys :BaseCharacterElement,IBaseCharacterAction
            5,1,1,1,1,1
        );
        animator = this.transform.Find("model").GetComponent<Animator>();
+         enermystate = new PathFinding(this);
        GetWaypoint();
-       enermystate = new PathFinding(this);
        CurrentHp = this.hp;
+       _timer = new GameTimer(0.2f);
    }
 
    private void OnEnable()
    {
+       
+       time = 0;
        CurrentHp = this.hp;
        IsDead = false;
+       currenIndex = 1;
+       
    }
 
    void Update()
@@ -89,8 +95,9 @@ public class Enermys :BaseCharacterElement,IBaseCharacterAction
    /// 敌人收到伤害
    /// </summary>
    /// <param name="ondamage">伤害</param>
-   public void OnDamage(int damage){
+   public void OnDamage(float damage){
        spriteRenderer.material.SetFloat("_FlashAmount", 1);
+
        Timer.Register(0.2f, () => { spriteRenderer.material.SetFloat("_FlashAmount", 0); });
        CurrentHp-=damage;
        if (CurrentHp <= 0) OnDead();
@@ -104,34 +111,37 @@ public class Enermys :BaseCharacterElement,IBaseCharacterAction
        if (Vector2.Distance(transform.position, target.transform.position) >
          attackdistance||target.gameObject.GetComponent<Hero.Hero>().IsDead)
        {
-                  
-          animator.SetBool("IsAttack",false);
+
+           target = null;
           SetState(new PathFinding(this));
           return;
        }
 
+       time += Time.deltaTime;
        var animatorInfo =animator.GetCurrentAnimatorStateInfo (0);
-            
-       if ((animatorInfo.normalizedTime%1.0>=0.99f))//normalizedTime: 范围0 -- 1,  0是动作开始，1是动作结束
+       if ((time>=animatorInfo.length))//normalizedTime: 范围0 -- 1,  0是动作开始，1是动作结束
        {
-  
+           time -= animatorInfo.length;
            // Debug.Log("攻击");
-           // target.GetComponent<Hero.Hero>().OnDamage(1);//播放完成后敌人收到伤害
+           target.GetComponent<Hero.Hero>().OnDamage(1);//播放完成后敌人收到伤害
+           //  Debug.Log(  _Hero.targetenermy.GetComponent<Enermys>().CurrentHp);
        }
+
    }
 
-   public void OnDamage(float damage)
-   {
-       throw new NotImplementedException();
-   }
 
    public void OnDead()
    {
        IsDead = true;
-    //稍微延迟一会再读取动画时间
-      animator.Play("Die");
-      //动画执行完成后
-      this.gameObject.SetActive(false);
+      //稍微延迟一会再读取动画时间
+      // animator.Play("Die");
+      // //动画执行完成后
+      // Timer.Register(0.8f, (delegate
+      // {
+         enermystate = new PathFinding(this);
+          this.gameObject.SetActive(false);
+      // }));
+
 
    }
 

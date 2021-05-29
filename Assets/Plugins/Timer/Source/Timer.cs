@@ -198,7 +198,13 @@ public class Timer
 
         this._timeElapsedBeforePause = null;
     }
+    public void Reset()
+    {
+        this.isCompleted = false;
 
+        this._startTime = this.GetWorldTime();
+        this._lastUpdateTime = this._startTime;
+    }
     /// <summary>
     /// Get how many seconds have elapsed since the start of this timer's current cycle.
     /// </summary>
@@ -309,6 +315,7 @@ public class Timer
 
     #region Private Methods
 
+   
     private float GetWorldTime()
     {
         return this.usesRealTime ? Time.realtimeSinceStartup : Time.time;

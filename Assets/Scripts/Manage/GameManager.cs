@@ -25,10 +25,9 @@ public class GameManager : MonoSingletion<GameManager>
     [Header("敌人生成器")]
     public EnermySpawn spawn;
 
+    public Hero.Hero Hero;
     private void Awake()
     {
-        
-        
         GameObjectPool.CreatPool();
         // UIPanelManager.Instance.PushPanel(UIPanelType.GamePanel);
     }
@@ -72,6 +71,18 @@ public class GameManager : MonoSingletion<GameManager>
       if(GUILayout.Button("下一波",GUILayout.Width(200),GUILayout.Height(50)))
       {
         StartCoroutine(EnermyManager.GetInstance().Action());
+      }
+      if(GUILayout.Button("设置字",GUILayout.Width(200),GUILayout.Height(50)))
+      {
+         MainUI.Instance.SetTextUI("金币","40");
+      }  
+      if(GUILayout.Button("设置字",GUILayout.Width(400),GUILayout.Height(100)))
+      {
+         MainUI.Instance.DisaplayWaveText(2);
+      }  
+      if(GUILayout.Button("打印状态",GUILayout.Width(400),GUILayout.Height(100)))
+      {
+          Debug.Log( Hero._herostate);
       }
   }
 

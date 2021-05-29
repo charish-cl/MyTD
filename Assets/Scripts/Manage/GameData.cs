@@ -1,9 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class GameData:Singleton<GameData>
+﻿namespace Manage
 {
-    public int money { get; set; }
-    public int homehp { get; set; }
+    public class GameData:Singleton<GameData>
+    {
+        public int coin{ get; set; }
+        public int base_hp  { get; set; }
+
+        public GameData()
+        {
+            Init();
+        }
+        public void Init(int coin=40,int base_hp=20 )
+        {
+            this.coin = coin;
+            this.base_hp = base_hp;
+        }
+    }
 }

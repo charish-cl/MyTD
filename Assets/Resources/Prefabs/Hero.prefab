@@ -127,12 +127,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cb8e8c1dab4458909d963e075d53ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDead: 0
   animator: {fileID: 0}
   isflip: 0
   attackdistance: 0.5
   movespeed: 1
   target: {x: 0, y: 0, z: 0}
   targetenermy: {fileID: 0}
+  Idlepos: {x: 0, y: 0, z: 0}
 --- !u!58 &630744998
 CircleCollider2D:
   m_ObjectHideFlags: 0
